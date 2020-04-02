@@ -1,0 +1,3 @@
+id,name,amount_type,active,type_tax_use,amount,description,price_include
+l10n_generic_coa.1_sale_tax_template,VAT,percent,1,sale,12,VAT,1
+l10n_generic_coa.1_purchase_tax_template,VAT,percent,1,purchase,12,VAT,1

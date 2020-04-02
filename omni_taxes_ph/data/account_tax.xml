@@ -1,0 +1,1085 @@
+<odoo>
+  <data noupdate="1">
+    <!-- <record id="account_tax_ph_sale" model="account.tax">
+    	<field name="name">VAT</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">12.0000</field>
+    	<field name="description">VAT</field>
+    	<field name="price_include">True</field>
+    </record>
+
+    <record id="account_tax_ph_purchase" model="account.tax">
+    	<field name="name">VAT</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">12.0000</field>
+    	<field name="description">VAT</field>
+    	<field name="price_include">True</field>
+    </record> -->
+
+
+    <!-- <record id="l10n_generic_coa.1_sale_tax_template" model="account.tax">
+    	<field name="name">VAT</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">12.0000</field>
+    	<field name="description">VAT</field>
+    	<field name="price_include">True</field>
+    </record>
+
+    <record id="l10n_generic_coa.1_purchase_tax_template" model="account.tax">
+    	<field name="name">VAT</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">12.0000</field>
+    	<field name="description">VAT</field>
+    	<field name="price_include">True</field>
+    </record>
+ -->
+
+    <!-- SCHEDULES OF ALPHANUMERIC TAX CODES START SALES -->
+
+    <record id="account_tax_ph_1_sale" model="account.tax">
+    	<field name="name">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_2_sale" model="account.tax">
+    	<field name="name">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_3_sale" model="account.tax">
+    	<field name="name">EWT- professional entertainers - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional entertainers - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_4_sale" model="account.tax">
+    	<field name="name">EWT- professional entertainers - if the current year's gross income exceeds P720,000.00  - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- professional entertainers - if the current year's gross income exceeds P720,000.00  - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_5_sale" model="account.tax">
+    	<field name="name">EWT- professional athletes - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional athletes - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_6_sale" model="account.tax">
+    	<field name="name">EWT- professional athletes - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- professional athletes - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_7_sale" model="account.tax">
+    	<field name="name">EWT- movie, stage, radio, television and musical directors - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- movie, stage, radio, television and musical directors - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_8_sale" model="account.tax">
+    	<field name="name">EWT- movie, stage, radio, television and musical directors - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- movie, stage, radio, television and musical directors - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_9_sale" model="account.tax">
+    	<field name="name">EWT- management and technical consultants - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- management and technical consultants - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_10_sale" model="account.tax">
+    	<field name="name">EWT- bookkeeping agents and agencies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- bookkeeping agents and agencies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_11_sale" model="account.tax">
+    	<field name="name">EWT- insurance agents and insurance adjusters - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- insurance agents and insurance adjusters - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_12_sale" model="account.tax">
+    	<field name="name">EWT- other recipient of talent fees - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- other recipient of talent fees - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_13_sale" model="account.tax">
+    	<field name="name">EWT- other recipient of talent fees - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- other recipient of talent fees - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_14_sale" model="account.tax">
+    	<field name="name">EWT- fees of directors who are not employees of the company- INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- fees of directors who are not employees of the company- INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_15_sale" model="account.tax">
+    	<field name="name">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_16_sale" model="account.tax">
+    	<field name="name">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+     <record id="account_tax_ph_17_sale" model="account.tax">
+    	<field name="name">EWT- cinematographic film rentals - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- cinematographic film rentals - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_18_sale" model="account.tax">
+    	<field name="name">EWT- cinematographic film rentals - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- cinematographic film rentals - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+
+    <record id="account_tax_ph_19_sale" model="account.tax">
+    	<field name="name">EWT- prime contractors/sub-contractors - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- prime contractors/sub-contractors - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_20_sale" model="account.tax">
+    	<field name="name">EWT- prime contractors/sub-contractors - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- prime contractors/sub-contractors - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_21_sale" model="account.tax">
+    	<field name="name">EWT- income distribution to beneficiaries of estates and trusts - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-15.0000</field>
+    	<field name="description">EWT- income distribution to beneficiaries of estates and trusts - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_22_sale" model="account.tax">
+    	<field name="name">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_23_sale" model="account.tax">
+    	<field name="name">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_24_sale" model="account.tax">
+    	<field name="name">EWT- payments for medical practitioners through a duly registered professional partnership - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- payments for medical practitioners through a duly registered professional partnership - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_25_sale" model="account.tax">
+    	<field name="name">EWT- payments for medical/dental /veterinary services thru hospitals/clinics/ health maintenance organizations, including direct payments to service providers - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- payments for medical/dental /veterinary services thru hospitals/clinics/ health maintenance organizations, including direct payments to service providers - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_26_sale" model="account.tax">
+    	<field name="name">EWT- payments to partners of general professional partnerships - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- payments to partners of general professional partnerships - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+     <!-- <record id="account_tax_ph_26_sale" model="account.tax">
+    	<field name="name">EWT- payments made by credit card companies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-0.5000</field>
+    	<field name="description">EWT- payments made by credit card companies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record> -->
+
+    <!-- <record id="account_tax_ph_27_sale" model="account.tax">
+    	<field name="name">EWT- payments made by credit card companies - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-0.5000</field>
+    	<field name="description">EWT- payments made by credit card companies - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record> -->
+
+
+    <record id="account_tax_ph_28_sale" model="account.tax">
+    	<field name="name">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_29_sale" model="account.tax">
+    	<field name="name">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_31_sale" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_32_sale" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_33_sale" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_34_sale" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_35_sale" model="account.tax">
+    	<field name="name">EWT- additional payments to government personnel from importers, shipping and airline companies or their agents for overtime services - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-15.0000</field>
+    	<field name="description">EWT- additional payments to government personnel from importers, shipping and airline companies or their agents for overtime services - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_36_sale" model="account.tax">
+    	<field name="name">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and sales representatives and marketing agents and sub-agents of multi-level marketing companies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and sales representatives and marketing agents and sub-agents of multi-level marketing companies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_37_sale" model="account.tax">
+    	<field name="name">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and sales representatives and marketing agents and sub-agents of multi-level marketing companies - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and sales representatives and marketing agents and sub-agents of multi-level marketing companies - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_38_sale" model="account.tax">
+    	<field name="name">EWT - Gross payments to embalmers by funeral companies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT - Gross payments to embalmers by funeral companies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_39_sale" model="account.tax">
+    	<field name="name">EWT - payments made by pre-need companies to funeral parlors - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT - payments made by pre-need companies to funeral parlors - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_40_sale" model="account.tax">
+    	<field name="name">EWT - payments made by pre-need companies to funeral parlors - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT - payments made by pre-need companies to funeral parlors - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_41_sale" model="account.tax">
+    	<field name="name">EWT- Tolling fee paid to refineries - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- Tolling fee paid to refineries - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_42_sale" model="account.tax">
+    	<field name="name">EWT- Tolling fee paid to refineries - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- Tolling fee paid to refineries - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_43_sale" model="account.tax">
+    	<field name="name">EWT- Income payments made to suppliers of agricultural products - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made to suppliers of agricultural products - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_44_sale" model="account.tax">
+    	<field name="name">EWT- Income payments made to suppliers of agricultural products - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made to suppliers of agricultural products - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_45_sale" model="account.tax">
+    	<field name="name">EWT- Income payments on purchases of minerals, mineral products and quarry resources - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments on purchases of minerals, mineral products and quarry resources - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_46_sale" model="account.tax">
+    	<field name="name">EWT- Income payments on purchases of minerals, mineral products and quarry resources - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">sale</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments on purchases of minerals, mineral products and quarry resources - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <!-- SCHEDULES OF ALPHANUMERIC TAX CODES SALES END -->
+
+
+
+
+
+
+
+
+
+    <!-- SCHEDULES OF ALPHANUMERIC TAX CODES PRUCHASE START -->
+
+    <record id="account_tax_ph_1_purchase" model="account.tax">
+    	<field name="name">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_2_purchase" model="account.tax">
+    	<field name="name">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional/talent fees paid to juridical persons/individuals(lawyers, CPAs, etc.) - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_3_purchase" model="account.tax">
+    	<field name="name">EWT- professional entertainers - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional entertainers - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_4_purchase" model="account.tax">
+    	<field name="name">EWT- professional entertainers - if the current year's gross income exceeds P720,000.00  - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- professional entertainers - if the current year's gross income exceeds P720,000.00  - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_5_purchase" model="account.tax">
+    	<field name="name">EWT- professional athletes - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- professional athletes - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_6_purchase" model="account.tax">
+    	<field name="name">EWT- professional athletes - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- professional athletes - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_7_purchase" model="account.tax">
+    	<field name="name">EWT- movie, stage, radio, television and musical directors - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- movie, stage, radio, television and musical directors - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_8_purchase" model="account.tax">
+    	<field name="name">EWT- movie, stage, radio, television and musical directors - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- movie, stage, radio, television and musical directors - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_9_purchase" model="account.tax">
+    	<field name="name">EWT- management and technical consultants - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- management and technical consultants - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+
+    <record id="account_tax_ph_10_purchase" model="account.tax">
+    	<field name="name">EWT- bookkeeping agents and agencies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- bookkeeping agents and agencies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_11_purchase" model="account.tax">
+    	<field name="name">EWT- insurance agents and insurance adjusters - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- insurance agents and insurance adjusters - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_12_purchase" model="account.tax">
+    	<field name="name">EWT- other recipient of talent fees - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- other recipient of talent fees - if the current year's gross income does not exceed P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_13_purchase" model="account.tax">
+    	<field name="name">EWT- other recipient of talent fees - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- other recipient of talent fees - if the current year's gross income exceeds P720,000.00 - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_14_purchase" model="account.tax">
+    	<field name="name">EWT- fees of directors who are not employees of the company- INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-20.0000</field>
+    	<field name="description">EWT- fees of directors who are not employees of the company- INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_15_purchase" model="account.tax">
+    	<field name="name">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_16_purchase" model="account.tax">
+    	<field name="name">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- rentals : real/personal properties, poles,satellites and transmission facilities, billboards - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+     <record id="account_tax_ph_17_purchase" model="account.tax">
+    	<field name="name">EWT- cinematographic film rentals - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- cinematographic film rentals - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_18_purchase" model="account.tax">
+    	<field name="name">EWT- cinematographic film rentals - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- cinematographic film rentals - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+
+    <record id="account_tax_ph_19_purchase" model="account.tax">
+    	<field name="name">EWT- prime contractors/sub-contractors - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- prime contractors/sub-contractors - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_20_purchase" model="account.tax">
+    	<field name="name">EWT- prime contractors/sub-contractors - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- prime contractors/sub-contractors - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_21_purchase" model="account.tax">
+    	<field name="name">EWT- income distribution to beneficiaries of estates and trusts - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-15.0000</field>
+    	<field name="description">EWT- income distribution to beneficiaries of estates and trusts - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_22_purchase" model="account.tax">
+    	<field name="name">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_23_purchase" model="account.tax">
+    	<field name="name">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- gross commission or service fees of custom, insurance, stock, real estate, immigration and commercial brokers and fees of agents of professional entertainers - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_24_purchase" model="account.tax">
+    	<field name="name">EWT- payments for medical practitioners through a duly registered professional partnership - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- payments for medical practitioners through a duly registered professional partnership - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_25_purchase" model="account.tax">
+    	<field name="name">EWT- payments for medical/dental /veterinary services thru hospitals/clinics/ health maintenance organizations, including direct payments to service providers - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- payments for medical/dental /veterinary services thru hospitals/clinics/ health maintenance organizations, including direct payments to service providers - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_26_purchase" model="account.tax">
+    	<field name="name">EWT- payments to partners of general professional partnerships - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- payments to partners of general professional partnerships - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+     <!-- <record id="account_tax_ph_26_purchase" model="account.tax">
+    	<field name="name">EWT- payments made by credit card companies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-0.5000</field>
+    	<field name="description">EWT- payments made by credit card companies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record> -->
+
+    <!-- <record id="account_tax_ph_27_purchase" model="account.tax">
+    	<field name="name">EWT- payments made by credit card companies - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-0.5000</field>
+    	<field name="description">EWT- payments made by credit card companies - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record> -->
+
+
+    <record id="account_tax_ph_28_purchase" model="account.tax">
+    	<field name="name">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_29_purchase" model="account.tax">
+    	<field name="name">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- payments made by government offices on their local purchase of goods and services from local/resident suppliers - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_31_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_32_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of goods - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_33_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_34_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-2.0000</field>
+    	<field name="description">EWT- Income payments made by top 10,000 private corporations to their local/resident supplier of services - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_35_purchase" model="account.tax">
+    	<field name="name">EWT- additional payments to government personnel from importers, shipping and airline companies or their agents for overtime services - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-15.0000</field>
+    	<field name="description">EWT- additional payments to government personnel from importers, shipping and airline companies or their agents for overtime services - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_36_purchase" model="account.tax">
+    	<field name="name">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and purchases representatives and marketing agents and sub-agents of multi-level marketing companies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and purchases representatives and marketing agents and sub-agents of multi-level marketing companies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_37_purchase" model="account.tax">
+    	<field name="name">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and purchases representatives and marketing agents and sub-agents of multi-level marketing companies - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-10.0000</field>
+    	<field name="description">EWT- commission,rebates, discounts and other similar considerations paid/granted to independent and exclusive distributors, medical/technical and purchases representatives and marketing agents and sub-agents of multi-level marketing companies - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_38_purchase" model="account.tax">
+    	<field name="name">EWT - Gross payments to embalmers by funeral companies - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT - Gross payments to embalmers by funeral companies - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_39_purchase" model="account.tax">
+    	<field name="name">EWT - payments made by pre-need companies to funeral parlors - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT - payments made by pre-need companies to funeral parlors - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_40_purchase" model="account.tax">
+    	<field name="name">EWT - payments made by pre-need companies to funeral parlors - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT - payments made by pre-need companies to funeral parlors - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_41_purchase" model="account.tax">
+    	<field name="name">EWT- Tolling fee paid to refineries - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- Tolling fee paid to refineries - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_42_purchase" model="account.tax">
+    	<field name="name">EWT- Tolling fee paid to refineries - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-5.0000</field>
+    	<field name="description">EWT- Tolling fee paid to refineries - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_43_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments made to suppliers of agricultural products - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made to suppliers of agricultural products - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_44_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments made to suppliers of agricultural products - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments made to suppliers of agricultural products - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <record id="account_tax_ph_45_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments on purchases of minerals, mineral products and quarry resources - INDIVIDUAL</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments on purchases of minerals, mineral products and quarry resources - INDIVIDUAL</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">IND</field>
+    </record>
+
+    <record id="account_tax_ph_46_purchase" model="account.tax">
+    	<field name="name">EWT- Income payments on purchases of minerals, mineral products and quarry resources - CORPORATION</field>
+    	<field name="amount_type">percent</field>
+    	<field name="active">True</field>
+    	<field name="type_tax_use">purchase</field>
+    	<field name="amount">-1.0000</field>
+    	<field name="description">EWT- Income payments on purchases of minerals, mineral products and quarry resources - CORPORATION</field>
+    	<field name="price_include">True</field>
+    	<field name="atc_type">CORP</field>
+    </record>
+
+    <!-- SCHEDULES OF ALPHANUMERIC TAX CODES PRUCHASE END -->
+  </data>
+</odoo>
