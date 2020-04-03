@@ -19,12 +19,13 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','sale'],
+    'depends': ['base','sale','account'],
     # always loaded
     'data': [
         # 'security/user_groups.xml',
         # 'security/security_data.xml',
         'views/views.xml',
+        'data/chart_of_accounts_ph.xml',
         # 'views/templates.xml',
         
 

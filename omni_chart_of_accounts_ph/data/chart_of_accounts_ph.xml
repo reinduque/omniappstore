@@ -1,0 +1,1217 @@
+<odoo>
+	<data noupdate="1">
+		<record model="account.account" id="cash">
+			<field name="code">10110000</field>
+			<field name="name">Cash</field>
+			<field name="user_type_id">3</field>
+		</record>
+		<record model="account.account" id="petty_cash_fund">
+			<field name="code">10110010</field>
+			<field name="name">Petty Cash Fund</field>
+			<field name="user_type_id">3</field>
+		</record>
+		<record model="account.account" id="cash_on_hand">
+			<field name="code">10110020</field>
+			<field name="name">Cash on Hand</field>
+			<field name="user_type_id">3</field>
+		</record>
+		<record model="account.account" id="checks_on_hand">
+			<field name="code">10110030</field>
+			<field name="name">Checks on Hand</field>
+			<field name="user_type_id">3</field>
+		</record>
+		<record model="account.account" id="trade_and_other_receivable">
+			<field name="code">10120000</field>
+			<field name="name">Trade and Other Receivable</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="AR_USD">
+			<field name="code">10120100</field>
+			<field name="name">AR - USD</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="AR_trade_PHP">
+			<field name="code">10120200</field>
+			<field name="name">AR - Trade PHP</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="allowance_for_bad_debts">
+			<field name="code">10120201</field>
+			<field name="name">Allowance for Bad Debts</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="notes_receivable">
+			<field name="code">10120300</field>
+			<field name="name">Notes Receivable</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="advances_to_officers_and_employees">
+			<field name="code">10120400</field>
+			<field name="name">Advances to Officers and Employees</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="loans_to_officers_and_employees">
+			<field name="code">10120500</field>
+			<field name="name">Loans to Officers and Employees</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="other_non_trade_receivables">
+			<field name="code">10120600</field>
+			<field name="name">Other Non-Trade Receviables</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="suspense_receivable">
+			<field name="code">10120700</field>
+			<field name="name">Suspense Receivable</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="advances_to_suppliers">
+			<field name="code">10120800</field>
+			<field name="name">Advances to Suppliers</field>
+			<field name="user_type_id">1</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="inventories">
+			<field name="code">10140000</field>
+			<field name="name">Inventories</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="merchandise_inventory">
+			<field name="code">10140100</field>
+			<field name="name">Merchandise Inventory</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="prepaid_expenses">
+			<field name="code">10150000</field>
+			<field name="name">Prepaid Expenses</field>
+			<field name="user_type_id">7</field>
+		</record>
+		<record model="account.account" id="prepaid_insurance">
+			<field name="code">10150100</field>
+			<field name="name">Prepaid Expenses</field>
+			<field name="user_type_id">7</field>
+		</record>
+		<record model="account.account" id="prepaid_rentals">
+			<field name="code">10150200</field>
+			<field name="name">Prepaid Rentals</field>
+			<field name="user_type_id">7</field>
+		</record>
+		<record model="account.account" id="prepaid_association_dues">
+			<field name="code">10150300</field>
+			<field name="name">Prepaid Association Dues</field>
+			<field name="user_type_id">7</field>
+		</record>
+		<record model="account.account" id="prepared_taxes_and_licenses">
+			<field name="code">10150400</field>
+			<field name="name">Prepared Taxes and Licenses</field>
+			<field name="user_type_id">7</field>
+		</record>
+		<record model="account.account" id="prepaid_expense_others">
+			<field name="code">10150500</field>
+			<field name="name">Prepaid Expense - Others</field>
+			<field name="user_type_id">7</field>
+		</record>
+		<record model="account.account" id="creditable_tax_assets">
+			<field name="code">10160000</field>
+			<field name="name">Creditable Tax Assets</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="VAT_input_receivable">
+			<field name="code">10160100</field>
+			<field name="name">VAT Input Receivable</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="creditable_withholding_tax">
+			<field name="code">10160200</field>
+			<field name="name">VAT Input Receivable</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="investments">
+			<field name="code">10170000</field>
+			<field name="name">Investments</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="short_term_investments">
+			<field name="code">10170100</field>
+			<field name="name">Short-term Investments</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="other_assets">
+			<field name="code">10190000</field>
+			<field name="name">Other Assets</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="refundable_deposits">
+			<field name="code">10190100</field>
+			<field name="name">Refundable Deposits</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="deferred_income_tax">
+			<field name="code">10190200</field>
+			<field name="name">Deferred Income Tax</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="deferred_tax_assets">
+			<field name="code">10190300</field>
+			<field name="name">Deferred Tax Assets</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="valuation_allowance_DIT">
+			<field name="code">10190400</field>
+			<field name="name">Valuation Allowance - DIT</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="employees_fund">
+			<field name="code">10190500</field>
+			<field name="name">Employees Fund</field>
+			<field name="user_type_id">5</field>
+		</record>
+		<record model="account.account" id="property_plant_and_equipment">
+			<field name="code">10210000</field>
+			<field name="name">Property, Plant and Equipment</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="transpo_equipment_at_cost">
+			<field name="code">10210100</field>
+			<field name="name">Transpo Equipment (At Cost)</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="less_accum_depn_transpo_equipment">
+			<field name="code">10210110</field>
+			<field name="name">Less: Accum Depn - Transpo Equipment</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="tools_machinery_and_equipment_at_cost">
+			<field name="code">10210200</field>
+			<field name="name">Tools, Machinery and Equipment (At Cost)</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="less_accum_depn_tools_mach_and_equipment">
+			<field name="code">10210210</field>
+			<field name="name">Less: Accum Depn - Tools, Mach and Equipment</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="office_equipment_at_cost">
+			<field name="code">10210300</field>
+			<field name="name">Office Equipment (At Cost)</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="less_accum_office_equipment">
+			<field name="code">10210310</field>
+			<field name="name">Less: Accum Depn - Office Equipment</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="furniture_and_fixtures_at_cost">
+			<field name="code">10210400</field>
+			<field name="name">Furniture and Fixtures (At Cost)</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="less_accum_furniture_and_fixtures">
+			<field name="code">10210410</field>
+			<field name="name">Less: Accum Depn - Furniture and Fixtures</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="leasehold_improvements_at_cost">
+			<field name="code">10210500</field>
+			<field name="name">Leasehold Improvements (At Cost)</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="less_accum_office_equipment">
+			<field name="code">10210310</field>
+			<field name="name">Less: Accum Depn - Leasehold Improvements</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="intangible_assets">
+			<field name="code">10220000</field>
+			<field name="name">Intangible Assets</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="computer_software_at_cost">
+			<field name="code">10220100</field>
+			<field name="name">Computer Spftware (At Cost)</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="less_accum_amort_computer_software">
+			<field name="code">10220110</field>
+			<field name="name">Less: Accum Amort - Computer Software</field>
+			<field name="user_type_id">6</field>
+		</record>
+		<record model="account.account" id="accounts_payable">
+			<field name="code">10310000</field>
+			<field name="name">Accounts Payable</field>
+			<field name="user_type_id">2</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="AP_trade">
+			<field name="code">10310100</field>
+			<field name="name">AP - Trade</field>
+			<field name="user_type_id">2</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="notes_payable_current_portion">
+			<field name="code">10310200</field>
+			<field name="name">Notes Payable -  Current Portion</field>
+			<field name="user_type_id">2</field>
+			<field name="reconcile">True</field>
+		</record>
+		<record model="account.account" id="accrued_expenses">
+			<field name="code">10320000</field>
+			<field name="name">Accrued Expense</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_salaries_and_wages">
+			<field name="code">10320100</field>
+			<field name="name">Accrued Salaries and Wages</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_13th_month_pay">
+			<field name="code">10320200</field>
+			<field name="name">Accrued 13th Moth Pay</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_SL_VL_monetization">
+			<field name="code">10320300</field>
+			<field name="name">Accrued SL/VL Monetization</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_rent">
+			<field name="code">10320400</field>
+			<field name="name">Accrued Rent</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_utilities">
+			<field name="code">10320500</field>
+			<field name="name">Accrued Utilities</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_insurance">
+			<field name="code">10320600</field>
+			<field name="name">Accrued Insurance</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_telephone_and_internet">
+			<field name="code">10320700</field>
+			<field name="name">Accrued Telephone and Internet</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_professional_fees">
+			<field name="code">10320800</field>
+			<field name="name">Accrued Professional Fees</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="accrued_expense_others">
+			<field name="code">10320900</field>
+			<field name="name">Accrued Expense - Others</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="payables_to_government">
+			<field name="code">10330000</field>
+			<field name="name">Payables to Government</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="VAT_payable">
+			<field name="code">10330100</field>
+			<field name="name">VAT Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="output_VAT">
+			<field name="code">10330110</field>
+			<field name="name">Output VAT</field>
+			<field name="user_type_id">14</field>
+		</record>
+		<record model="account.account" id="income_tax_payable">
+			<field name="code">10330200</field>
+			<field name="name">Income Tax Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="wtax_payable_compensation">
+			<field name="code">10330300</field>
+			<field name="name">W/Tax Payable - Compensation</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="wtax_payable_expanded">
+			<field name="code">10330400</field>
+			<field name="name">W/Tax Payable - Expanded</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="SSS_contributions_payable">
+			<field name="code">10330500</field>
+			<field name="name">SSS Contributions Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="philhealth_contributions_payable">
+			<field name="code">10330600</field>
+			<field name="name">Philhealth Contributions Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="HDMF_contributions_payable">
+			<field name="code">10330700</field>
+			<field name="name">HDMF Contributions Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="SSS_salary_loan_payable">
+			<field name="code">10330800</field>
+			<field name="name">SSS Salary Loan Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="HDMF_MPL_payable">
+			<field name="code">10330900</field>
+			<field name="name">HDMF MPL Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="intercompany_payables">
+			<field name="code">10340000</field>
+			<field name="name">Inter-Company Payables</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="other_payables">
+			<field name="code">10350000</field>
+			<field name="name">Other Payables</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="deposits_from_customers">
+			<field name="code">10350100</field>
+			<field name="name">Deposits from Customers</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="credit_card_payables">
+			<field name="code">10350200</field>
+			<field name="name">Credit Card Payables</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="advances_from_officers_and_employees">
+			<field name="code">10350300</field>
+			<field name="name">Advances from Officers and Employees</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="other_non_trade_payables">
+			<field name="code">10410000</field>
+			<field name="name">Other Non-Trade Payables</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="loans_payables">
+			<field name="code">10410100</field>
+			<field name="name">Loans Payable</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="notes_payables">
+			<field name="code">10410200</field>
+			<field name="name">Notes Payables</field>
+			<field name="user_type_id">9</field>
+		</record>
+		<record model="account.account" id="stockholders_equity">
+			<field name="code">10510000</field>
+			<field name="name">Stockholder's Equity</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="capital_stock">
+			<field name="code">10510100</field>
+			<field name="name">Capital Stock</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="paid_up_capital_stock">
+			<field name="code">10510110</field>
+			<field name="name">Paid-up Capital Stock</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="deposit_for_future_subscrip">
+			<field name="code">10510120</field>
+			<field name="name">Deposit for Future Subscrip.</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="quasi_reorganization_surplus">
+			<field name="code">10510130</field>
+			<field name="name">Quasi-Reorganization Surplus</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="retained_earnings">
+			<field name="code">10510200</field>
+			<field name="name">Retained Earnings</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="current_earnings">
+			<field name="code">10510210</field>
+			<field name="name">Current Earnings</field>
+			<field name="user_type_id">12</field>
+		</record>
+		<record model="account.account" id="cash_dividends">
+			<field name="code">10510300</field>
+			<field name="name">Cash Dividends</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="prior_period_adjustment">
+			<field name="code">10510400</field>
+			<field name="name">Prior Period Adjustment</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="cash_dividends">
+			<field name="code">10510500</field>
+			<field name="name">Clearing Accounts</field>
+			<field name="user_type_id">11</field>
+		</record>
+		<record model="account.account" id="revenues">
+			<field name="code">10610000</field>
+			<field name="name">Revenues</field>
+			<field name="user_type_id">13</field>
+		</record>
+		<record model="account.account" id="revenue_trading">
+			<field name="code">10610100</field>
+			<field name="name">Revenue - Trading</field>
+			<field name="user_type_id">13</field>
+		</record>
+		<record model="account.account" id="revenue_services">
+			<field name="code">10610200</field>
+			<field name="name">Revenue - Services</field>
+			<field name="user_type_id">13</field>
+		</record>
+		<record model="account.account" id="cost_of_revenue">
+			<field name="code">10710000</field>
+			<field name="name">Cost of Revenue</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_of_revenue_traded_products_goods">
+			<field name="code">10710100</field>
+			<field name="name">Cost of Revenue - Traded Products Goods</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_of_revenue_direct_labor">
+			<field name="code">10720000</field>
+			<field name="name">Cost of Revenue - Direct Labor</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_salaries_and_wages">
+			<field name="code">10721000</field>
+			<field name="name">Salaries and Wages</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_salaries_basic">
+			<field name="code">10721100</field>
+			<field name="name">Salaries - Basic</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_salaries_overtime">
+			<field name="code">10721110</field>
+			<field name="name">Salaries - Overtime</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_salaries_allowances">
+			<field name="code">10721120</field>
+			<field name="name">Salaries - Allowances</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_salaries_others">
+			<field name="code">10721130</field>
+			<field name="name">Salaries - Others</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_13th_month_pay">
+			<field name="code">10721140</field>
+			<field name="name">13th Month Pay</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_SL_VL_monetization">
+			<field name="code">10721150</field>
+			<field name="name">SL/VL Monetization</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_employee_benefits">
+			<field name="code">10721160</field>
+			<field name="name">Employee Benefits</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_trainings_and_seminar">
+			<field name="code">10721170</field>
+			<field name="name">Trainings and Seminar</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_contributions_expenses">
+			<field name="code">10722000</field>
+			<field name="name">Contribution Expenses</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_SSS_contributions_expense">
+			<field name="code">10722100</field>
+			<field name="name">SSS Contributions Expense</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_philhealth_contributions_expense">
+			<field name="code">10722110</field>
+			<field name="name">Philhealth Contributions Expense</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_HDMF_contributions_expense">
+			<field name="code">10722120</field>
+			<field name="name">HDMF Contributions Expense</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_rent_and_utilities">
+			<field name="code">10723000</field>
+			<field name="name">Rent and Utilites</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_rent_office">
+			<field name="code">10723100</field>
+			<field name="name">Rent - Office</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_rent_vehicles">
+			<field name="code">10723110</field>
+			<field name="name">Rent - Vehicles</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_rent_others">
+			<field name="code">10723120</field>
+			<field name="name">Rent - Others</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_association_dues">
+			<field name="code">10723130</field>
+			<field name="name">Association Dues</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_electricity">
+			<field name="code">10723140</field>
+			<field name="name">Electricity</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_water">
+			<field name="code">10723150</field>
+			<field name="name">Water</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_common_aircon">
+			<field name="code">10723160</field>
+			<field name="name">Common Aircon</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_postage_telephone_internet">
+			<field name="code">10723170</field>
+			<field name="name">Postage, Telephone and Internet</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_utility_expense_others">
+			<field name="code">10723180</field>
+			<field name="name">Utility Expense - Others</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_freight_and_duties">
+			<field name="code">10724000</field>
+			<field name="name">Freight and Duties</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_duties_and_taxes">
+			<field name="code">10724100</field>
+			<field name="name">Duties and Taxes</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_brokerage_fee">
+			<field name="code">10724110</field>
+			<field name="name">Brokerage Fee</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_freight_and_storage_charges">
+			<field name="code">10724120</field>
+			<field name="name">Freight and Storage Charges</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_travel_and_transportation">
+			<field name="code">10725000</field>
+			<field name="name">Travel and Transportation</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_gas_and_oil">
+			<field name="code">10725100</field>
+			<field name="name">Gas and Oil</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_per_diem">
+			<field name="code">10725110</field>
+			<field name="name">Per Diem</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_accomodation">
+			<field name="code">10725120</field>
+			<field name="name">Accomodation</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_air_fare_abroad">
+			<field name="code">10725130</field>
+			<field name="name">Air Fare - Abroad</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_air_fare_local">
+			<field name="code">10725140</field>
+			<field name="name">Air Fare - Local</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_transporation">
+			<field name="code">10725150</field>
+			<field name="name">Transportation</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_toll_fee">
+			<field name="code">10725160</field>
+			<field name="name">Toll Fee</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_parking_fee">
+			<field name="code">10725170</field>
+			<field name="name">Parking Fee</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_travel_expense_others">
+			<field name="code">10725180</field>
+			<field name="name">Travel Expense - Others</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_repairs_and_maintenance">
+			<field name="code">10726000</field>
+			<field name="name">Repairs and Maintenance</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_RM_office">
+			<field name="code">10726100</field>
+			<field name="name">RM - Office</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_RM_computers">
+			<field name="code">10726110</field>
+			<field name="name">RM - Computers</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_RM_vehicles">
+			<field name="code">10726120</field>
+			<field name="name">RM - Vehicles</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_RM_machineries">
+			<field name="code">10726130</field>
+			<field name="name">RM - Machineries</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_RM_others">
+			<field name="code">10726140</field>
+			<field name="name">RM - Others</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_outside_services">
+			<field name="code">10727000</field>
+			<field name="name">Outside Services</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_outside_services_1">
+			<field name="code">10727100</field>
+			<field name="name">Outside Services</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_depreciation_and_amortization">
+			<field name="code">10728000</field>
+			<field name="name">Depreciation and Amortization</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_depn_transpo_equipment">
+			<field name="code">10728100</field>
+			<field name="name">Depn - Transpo Equipment</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_depn_tools_mach_and_equipment">
+			<field name="code">10728110</field>
+			<field name="name">Depn - Tools, Mach and Equipment</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_depn_office_equipment">
+			<field name="code">10728120</field>
+			<field name="name">Depn - Office Equipment</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_depn_furniture_and_fixtures">
+			<field name="code">10728130</field>
+			<field name="name">Depn - Furniture and Fixtures</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_depn_leasehold_improvements">
+			<field name="code">10728140</field>
+			<field name="name">Depn - Leasehold Improvements</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_amort_computer_software">
+			<field name="code">10728150</field>
+			<field name="name">Amort - Computer Software</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_cost_of_revenue_other_direct_costs">
+			<field name="code">10729000</field>
+			<field name="name">Cost of Revenue - Other Direct Costs</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_DC_insurance">
+			<field name="code">10729100</field>
+			<field name="name">DC - Insurance</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_DC_penalties">
+			<field name="code">10729110</field>
+			<field name="name">DC - Penalties</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_DC_permitting">
+			<field name="code">10729120</field>
+			<field name="name">DC - Permitting</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="cost_DC_miscellaneous_expenses">
+			<field name="code">10729130</field>
+			<field name="name">DC - Miscellaneous Expenses</field>
+			<field name="user_type_id">17</field>
+		</record>
+		<record model="account.account" id="operating_expenses">
+			<field name="code">10810000</field>
+			<field name="name">Operating Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_salaries_and_benefits">
+			<field name="code">10811000</field>
+			<field name="name">Salaries and Benefits</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_basic_salaries">
+			<field name="code">10811100</field>
+			<field name="name">Basic salaries</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_overtime">
+			<field name="code">10811110</field>
+			<field name="name">Overtime</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_allowances">
+			<field name="code">10811120</field>
+			<field name="name">allowances</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_others">
+			<field name="code">10811130</field>
+			<field name="name">Others</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_13th_month_pay">
+			<field name="code">10811140</field>
+			<field name="name">13th Month Pay</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_SL_VL_Monetization">
+			<field name="code">10811150</field>
+			<field name="name">SL/VL Monetization</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_employee_benefits">
+			<field name="code">10811160</field>
+			<field name="name">Employee Benefits</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_trainings_and_seminars">
+			<field name="code">10811170</field>
+			<field name="name">Trainings and Seminars</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_contribution_expenses">
+			<field name="code">10812000</field>
+			<field name="name">Contribution Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_SSS_contributions_expense">
+			<field name="code">10812100</field>
+			<field name="name">SSS Contributions Expense</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_philhealth_contributions_expense">
+			<field name="code">10812110</field>
+			<field name="name">Philhealth Contributions Expense</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_HDMF_contributions_expense">
+			<field name="code">10812120</field>
+			<field name="name">HDMF Contributions Expense</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_rent_and_utilities">
+			<field name="code">10813000</field>
+			<field name="name">Rent and Utilites</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_rent_office">
+			<field name="code">10813100</field>
+			<field name="name">Rent - Office</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_rent_vehicles">
+			<field name="code">10813110</field>
+			<field name="name">Rent - Vehicles</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_rent_others">
+			<field name="code">10813120</field>
+			<field name="name">Rent - Others</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_association_dues">
+			<field name="code">10813130</field>
+			<field name="name">Association Dues</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_electricity">
+			<field name="code">10813140</field>
+			<field name="name">Electricity</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_water">
+			<field name="code">10813150</field>
+			<field name="name">Water</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_common_aircon">
+			<field name="code">10813160</field>
+			<field name="name">Common Aircon</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_postage_telephone_internet">
+			<field name="code">10813170</field>
+			<field name="name">Postage, Telephone and Internet</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_utility_expense_others">
+			<field name="code">10813180</field>
+			<field name="name">Utility Expense - Others</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_freight_and_duties">
+			<field name="code">10814000</field>
+			<field name="name">Freight and Duties</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_duties_and_taxes">
+			<field name="code">10814100</field>
+			<field name="name">Duties and Taxes</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_brokerage_fee">
+			<field name="code">10814110</field>
+			<field name="name">Brokerage Fee</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_freight_and_storage_charges">
+			<field name="code">10814120</field>
+			<field name="name">Freight and Storage Charges</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_travel_and_transportation">
+			<field name="code">10815000</field>
+			<field name="name">Travel and Transportation</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_gas_and_oil">
+			<field name="code">10815100</field>
+			<field name="name">Gas and Oil</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_per_diem">
+			<field name="code">10815110</field>
+			<field name="name">Per Diem</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_accomodation">
+			<field name="code">10815120</field>
+			<field name="name">Accomodation</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_air_fare_abroad">
+			<field name="code">10815130</field>
+			<field name="name">Air Fare - Abroad</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_air_fare_local">
+			<field name="code">10815140</field>
+			<field name="name">Air Fare - Local</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_transporation">
+			<field name="code">10815150</field>
+			<field name="name">Transportation</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_toll_fee">
+			<field name="code">10815160</field>
+			<field name="name">Toll Fee</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_parking_fee">
+			<field name="code">10815170</field>
+			<field name="name">Parking Fee</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_travel_expense_others">
+			<field name="code">10815180</field>
+			<field name="name">Travel Expense - Others</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_repairs_and_maintenance">
+			<field name="code">10816000</field>
+			<field name="name">Repairs and Maintenance</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_RM_office">
+			<field name="code">10816100</field>
+			<field name="name">RM - Office</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_RM_computers">
+			<field name="code">10816110</field>
+			<field name="name">RM - Computers</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_RM_vehicles">
+			<field name="code">10816120</field>
+			<field name="name">RM - Vehicles</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_RM_machineries">
+			<field name="code">10816130</field>
+			<field name="name">RM - Machineries</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_RM_others">
+			<field name="code">10816140</field>
+			<field name="name">RM - Others</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_outside_services">
+			<field name="code">10817000</field>
+			<field name="name">Outside Services</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_outside_services_1">
+			<field name="code">10817100</field>
+			<field name="name">Outside Services</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_depreciation_and_amortization">
+			<field name="code">10818000</field>
+			<field name="name">Depreciation and Amortization</field>
+			<field name="user_type_id">16</field>
+		</record>
+		<record model="account.account" id="expense_depn_transpo_equipment">
+			<field name="code">10818100</field>
+			<field name="name">Depn - Transpo Equipment</field>
+			<field name="user_type_id">16</field>
+		</record>
+		<record model="account.account" id="expense_depn_tools_mach_and_equipment">
+			<field name="code">10818110</field>
+			<field name="name">Depn - Tools, Mach and Equipment</field>
+			<field name="user_type_id">16</field>
+		</record>
+		<record model="account.account" id="expense_depn_office_equipment">
+			<field name="code">10818120</field>
+			<field name="name">Depn - Office Equipment</field>
+			<field name="user_type_id">16</field>
+		</record>
+		<record model="account.account" id="expense_depn_furniture_and_fixtures">
+			<field name="code">10818130</field>
+			<field name="name">Depn - Furniture and Fixtures</field>
+			<field name="user_type_id">16</field>
+		</record>
+		<record model="account.account" id="expense_depn_leasehold_improvements">
+			<field name="code">10818140</field>
+			<field name="name">Depn - Leasehold Improvements</field>
+			<field name="user_type_id">16</field>
+		</record>
+		<record model="account.account" id="expense_amort_computer_software">
+			<field name="code">10818150</field>
+			<field name="name">Amort - Computer Software</field>
+			<field name="user_type_id">16</field>
+		</record>
+		<record model="account.account" id="expense_marketing_expenses">
+			<field name="code">10819000</field>
+			<field name="name">Marketing Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_marketing_expenses">
+			<field name="code">10819100</field>
+			<field name="name">Advertising Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_professional_fees">
+			<field name="code">10820000</field>
+			<field name="name">Professional Fees</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_professional_fees_accounting">
+			<field name="code">10820100</field>
+			<field name="name">Professional Fees - Accounting</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_professional_fees_auditing">
+			<field name="code">10820110</field>
+			<field name="name">Professional Fees - Auditing</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_professional_fees_legal">
+			<field name="code">10820120</field>
+			<field name="name">Professional Fees - Legal</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_professional_fees_others">
+			<field name="code">10820130</field>
+			<field name="name">Professional Fees - Others</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_professional_fees_notarial">
+			<field name="code">10820150</field>
+			<field name="name">Notarial Fees</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_taxes_and_licenses">
+			<field name="code">10821000</field>
+			<field name="name">Taxes and Licenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_business_taxes">
+			<field name="code">10821100</field>
+			<field name="name">Business Taxes</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_documentary_stamp_tax">
+			<field name="code">10821110</field>
+			<field name="name">Documentary Stamp Tax</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_car_registration">
+			<field name="code">10821120</field>
+			<field name="name">Taxes and Licenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_tax_assessment">
+			<field name="code">10821130</field>
+			<field name="name">Taxes Assessment</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_other_administrative_expenses">
+			<field name="code">10822000</field>
+			<field name="name">Other Administrative Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_representation">
+			<field name="code">10822100</field>
+			<field name="name">Representation</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_facilitation_expense">
+			<field name="code">10822110</field>
+			<field name="name">Facilitation Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_donations">
+			<field name="code">10822130</field>
+			<field name="name">Donations</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_insurance">
+			<field name="code">10822140</field>
+			<field name="name">Insurance</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_commission">
+			<field name="code">10822150</field>
+			<field name="name">Commission</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_office_supplies">
+			<field name="code">10822160</field>
+			<field name="name">Office Supplies</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_uniforms">
+			<field name="code">10822170</field>
+			<field name="name">Uniforms</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_bank_charges">
+			<field name="code">10822180</field>
+			<field name="name">Bank Charges</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_bad_debts">
+			<field name="code">10822190</field>
+			<field name="name">Bad Debts</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_probable_loss">
+			<field name="code">10822200</field>
+			<field name="name">Probable Loss</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_recreational_expense">
+			<field name="code">10822210</field>
+			<field name="name">Recreational Expense</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_year_end_expenses">
+			<field name="code">10822220</field>
+			<field name="name">Year-end Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_penalties">
+			<field name="code">10822230</field>
+			<field name="name">Penalties</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_interest_expense">
+			<field name="code">10822240</field>
+			<field name="name">Interest Expense</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_gain_loss_forex">
+			<field name="code">10822250</field>
+			<field name="name">Gain/Loss Forex</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_gain_loss_disposal_of_asset">
+			<field name="code">10822260</field>
+			<field name="name">Gain/Loss Disposal of Asset</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_prompt_payment_discount">
+			<field name="code">10822270</field>
+			<field name="name">Prompt Payment Discount</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="expense_miscellaneous_expenses">
+			<field name="code">10822280</field>
+			<field name="name">Miscellaneous Expenses</field>
+			<field name="user_type_id">15</field>
+		</record>
+		<record model="account.account" id="other_income">
+			<field name="code">10910000</field>
+			<field name="name">Other Income</field>
+			<field name="user_type_id">14</field>
+		</record>
+		<record model="account.account" id="interest_income">
+			<field name="code">10910100</field>
+			<field name="name">Interest Income</field>
+			<field name="user_type_id">14</field>
+		</record>
+		<record model="account.account" id="other_income_1">
+			<field name="code">10910200</field>
+			<field name="name">Other Income</field>
+			<field name="user_type_id">14</field>
+		</record>
+	</data>
+</odoo>
