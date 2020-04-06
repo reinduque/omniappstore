@@ -18,3 +18,5 @@ class taxesPH(models.Model):
 		('IND', 'INDIVIDUAL'),
 		('CORP', 'CORPORATION'),
 	], help="Select if ATC is a INDIVIDUAL or CORPORATION.")
+
+	atc_code = fields.Char('ATC CODE')
