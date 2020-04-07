@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "omni_customer_credit_limit",
+    'name': "omni_credit_limit",
 
     'summary': """
         Customer Credit Limit
@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','account','sale','contacts'],
+    'depends': ['base','account','sale_management','contacts'],
 
     # always loaded
     'data': [
