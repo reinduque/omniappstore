@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_omni_location_assignment_omni_location_assignment,omni_location_assignment.omni_location_assignment,model_omni_location_assignment_omni_location_assignment,base.group_user,1,1,1,1
