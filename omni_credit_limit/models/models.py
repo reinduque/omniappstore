@@ -12,5 +12,19 @@ class creditLimit(models.Model):
     _inherit = 'res.partner'
 
     allow_credit = fields.Boolean('Check Credit', default=False)
-    #credit_limit = fields.Float('Credit Limit', default="0.0")
+    credit_limit = fields.Float('Credit Limit', default="0.0")
     credit_limit_on_hold = fields.Boolean('Credit Limit on hold', default=False)
+
+
+class SaleOrder(models.Model):
+    _inherit = 'sale.order'
+
+
+    state = fields.Selection([
+        ('draft', 'Quotation'),
+        ('sent', 'Quotation Sent'),
+        ('credit_limit', 'Credit Limit'),
+        ('sale', 'Sales Order'),
+        ('done', 'Locked'),
+        ('cancel', 'Cancelled'),
+        ], string='Status', readonly=True, copy=False, index=True, tracking=4, default='draft')

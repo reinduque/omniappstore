@@ -1,60 +1,31 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="omni_credit_limit.list">
-      <field name="name">omni_credit_limit list</field>
-      <field name="model">omni_credit_limit.omni_credit_limit</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
+    <record id="partner_credit_limit" model="ir.ui.view">
+        <field name="name">Partner Credit Limit</field>
+        <field name="model">res.partner</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="groups_id" eval="[(6,0, [ref('account.group_account_user'),ref('account.group_account_invoice')])]" />
+        <field name="arch" type="xml">
+          <xpath expr="//page[@name='sales_purchases']/group/group[3]" position="after">
+            <group string="Credit Limit">
+              <field name="allow_credit" string="Allow Credit"/>
+              <field name="credit_limit" string="Credit Limit" attrs="{'readonly': [('allow_credit','=', False)]}"/>
+            </group>
+          </xpath>
+        </field>
     </record>
--->
 
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="omni_credit_limit.action_window">
-      <field name="name">omni_credit_limit window</field>
-      <field name="res_model">omni_credit_limit.omni_credit_limit</field>
-      <field name="view_mode">tree,form</field>
+    <record id="sale_order_inherit" model="ir.ui.view">
+        <field name="name">Add Credit limit state</field>
+        <field name="model">sale.order</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//header/field[@name='state']" position="replace">
+            <field name="state" widget="statusbar" statusbar_visible="draft,sent,credit_limit,sale"/>
+          </xpath>
+        </field>
     </record>
--->
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="omni_credit_limit.action_server">
-      <field name="name">omni_credit_limit server</field>
-      <field name="model_id" ref="model_omni_credit_limit_omni_credit_limit"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
-
-    <!-- Top menu item -->
-<!--
-    <menuitem name="omni_credit_limit" id="omni_credit_limit.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="omni_credit_limit.menu_1" parent="omni_credit_limit.menu_root"/>
-    <menuitem name="Menu 2" id="omni_credit_limit.menu_2" parent="omni_credit_limit.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="omni_credit_limit.menu_1_list" parent="omni_credit_limit.menu_1"
-              action="omni_credit_limit.action_window"/>
-    <menuitem name="Server to list" id="omni_credit_limit" parent="omni_credit_limit.menu_2"
-              action="omni_credit_limit.action_server"/>
--->
   </data>
 </odoo>
