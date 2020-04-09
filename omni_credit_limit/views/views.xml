@@ -11,6 +11,7 @@
             <group string="Credit Limit">
               <field name="allow_credit" string="Allow Credit"/>
               <field name="credit_limit" string="Credit Limit" attrs="{'readonly': [('allow_credit','=', False)]}"/>
+              <field name="credit_limit_on_hold" string="Credit Limit on Hold"/>
             </group>
           </xpath>
         </field>
