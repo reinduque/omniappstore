@@ -28,5 +28,19 @@
           </xpath>
         </field>
     </record>
+    <record id="sale_order_newconfirmbutton" model="ir.ui.view">
+        <field name="name">New Confirm Sale Button</field>
+        <field name="model">sale.order</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//header/button[@id='action_confirm']" position="replace">
+            <button name="action_confirm2" id="action_confirm2" string="Confirm" class="btn-primary" type="object" attrs="{'invisible': [('state', 'not in', ['sent'])]}"/>
+          </xpath>
+          <xpath expr="//header/button[@name='action_confirm'][1]" position="replace">
+            <button name="action_confirm2" string="Confirm" type="object" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+          </xpath>
+        </field>
+    </record>
   </data>
 </odoo>
