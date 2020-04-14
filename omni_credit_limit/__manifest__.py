@@ -27,6 +27,7 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'wizard/credit_limit_on_hold_confirmation_wizard.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

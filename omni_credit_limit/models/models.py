@@ -2,7 +2,6 @@
 
 from odoo import models, fields, api, _
 from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT, float_compare
-from odoo.exceptions import UserError
 from datetime import datetime
 import logging
 _logger = logging.getLogger(__name__)
@@ -19,24 +18,16 @@ class creditLimit(models.Model):
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-
     state = fields.Selection([
         ('draft', 'Quotation'),
         ('sent', 'Quotation Sent'),
-        ('credit_limit', 'Credit Limit'),
+        ('credit_limit', 'Credit Limit on Hold'),
         ('sale', 'Sales Order'),
         ('done', 'Locked'),
         ('cancel', 'Cancelled'),
         ], string='Status', readonly=True, copy=False, index=True, tracking=4, default='draft')
 
-    def action_confirm(self):
-        res = super(SaleOrder, self).action_confirm()
-        for order in self:
-            order.check_limit()
-
-        return res
-
-    def check_limit(self):    
+    def action_confirm2(self):
         self.ensure_one()
         partner = self.partner_id
         moveline_obj = self.env['account.move.line']
@@ -51,25 +42,47 @@ class SaleOrder(models.Model):
             debit += line.credit
         sales = self.env['sale.order'].search([
             ('partner_id', '=', self.partner_id.id), 
-            ('invoice_status', 'not in', [('invoiced')]),
-            ('state','in',[('sale')])
-            #i need to include state=done here. but state=sale is escluded when i add done
+            ('invoice_status', 'not in', ['invoiced']),
+            ('state','in',['sale','done'])
             ])
-        msg = 'start'
+        #msg = 'start'
         for sale in sales:
             total_unpaid += sale.amount_total
-            msg = msg + '\nname='+sale.name+'::invoice_status='+sale.invoice_status+'::state='+sale.state+'::amount='+str(sale.amount_total)
-        raise UserError(msg + '\nend'
-            '\ncredit='+str(credit)+
-            '\ndebit='+str(debit)+
-            '\ntotal_unpaid='+str(total_unpaid)+
-            '\npartner.credit_limit='+str(partner.credit_limit)
-        )
-        if (credit - debit + total_unpaid) > partner.credit_limit:
-            if not partner.over_credit:
-                msg = 'Confirming Sale Order is not allowed. \nTotal Due Amount =' \
-                      '%s!\nPlease check Partner Accounts or Credit Limit.' % (credit - debit + total_unpaid)
-                raise UserError(_('Credit Over Limits !\n' + msg))
-            partner.write({'credit_limit': credit - debit + self.amount_total})
-
-        return self
+        #msg = msg + '\nname='+sale.name+'::invoice_status='+sale.invoice_status+'::state='+sale.state+'::amount='+str(sale.amount_total)
+        #raise UserError(msg + '\nend'
+        #    '\ncredit='+str(credit)+
+        #    '\ndebit='+str(debit)+
+        #    '\ntotal_unpaid='+str(total_unpaid)+
+        #    '\npartner.credit_limit='+str(partner.credit_limit)
+        #)
+        if (credit - debit + total_unpaid) > partner.credit_limit and partner.allow_credit:
+            if not partner.credit_limit_on_hold:
+                if self.env.user.has_group('sales_team.group_sale_manager'):
+                    view = self.env.ref('omni_credit_limit.credit_limit_on_hold_wizard_form')
+                    wiz = self.env['creditlimit.hold_confirmation'].create({'sale_id': self.id})
+                    return {
+                        'name': _('Put Credit Limit on Hold?'),
+                        'type': 'ir.actions.act_window',
+                        'view_mode': 'form',
+                        'res_model': 'creditlimit.hold_confirmation',
+                        'views': [(view.id, 'form')],
+                        'view_id': view.id,
+                        'target': 'new',
+                        'res_id': wiz.id,
+                        'context': self.env.context,
+                    }
+                else:
+                    msg = 'Total Due Amount %s will be above %s\'s credit limit %s.' \
+                      '\nTo confirm more sales, please process payment from Customer or raise Credit Limit.' \
+                      '\nSale Order will not be confirmed.' % (credit - debit + total_unpaid, partner.name, partner.credit_limit)
+                    raise UserError(_('Credit Limit Reached \n' + msg))
+            else:
+                msg = 'Total Due Amount %s will be above %s\'s credit limit %s.' \
+                      '\nPartner\'s credit limit is currently on hold.' \
+                      '\nTo confirm more sales, please process payment from Customer or raise Credit Limit.'\
+                      '\nSale Order will not be confirmed.' % (credit - debit + total_unpaid, partner.name, partner.credit_limit)
+                raise UserError(_('Credit Limit Reached \n' + msg))
+        else:
+            partner.write({'credit_limit_on_hold': False})
+            self.action_confirm()
+        return
