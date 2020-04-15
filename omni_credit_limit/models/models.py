@@ -58,8 +58,11 @@ class SaleOrder(models.Model):
         if (credit - debit + total_unpaid) > partner.credit_limit and partner.allow_credit:
             if not partner.credit_limit_on_hold:
                 if self.env.user.has_group('sales_team.group_sale_manager'):
+                    msg = 'Total Due Amount %s will be above %s\'s credit limit %s.\n' \
+                        'To confirm more sales, please process payment from Customer or raise Credit Limit.' \
+                        % (credit - debit + total_unpaid, partner.name, partner.credit_limit)
                     view = self.env.ref('omni_credit_limit.credit_limit_on_hold_wizard_form')
-                    wiz = self.env['creditlimit.hold_confirmation'].create({'sale_id': self.id})
+                    wiz = self.env['creditlimit.hold_confirmation'].create({'sale_id': self.id,'msg':msg})
                     return {
                         'name': _('Put Credit Limit on Hold?'),
                         'type': 'ir.actions.act_window',

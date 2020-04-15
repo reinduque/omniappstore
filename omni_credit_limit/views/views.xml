@@ -9,14 +9,13 @@
         <field name="arch" type="xml">
           <xpath expr="//page[@name='sales_purchases']/group/group[3]" position="after">
             <group string="Credit Limit">
-              <field name="allow_credit" string="Allow Credit"/>
-              <field name="credit_limit" string="Credit Limit" attrs="{'readonly': [('allow_credit','=', False)]}"/>
+              <field name="allow_credit" string="Check Credit Limit"/>
+              <field name="credit_limit" string="Credit Limit" attrs="{'readonly': [('allow_credit','=', False)],'required': [('allow_credit','=', True)]}"/>
               <field name="credit_limit_on_hold" string="Credit Limit on Hold"/>
             </group>
           </xpath>
         </field>
     </record>
-
     <record id="sale_order_inherit" model="ir.ui.view">
         <field name="name">Add Credit limit state</field>
         <field name="model">sale.order</field>
