@@ -6,16 +6,15 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form string="Do you wish to confirm this Sale Order but hold partner's Credit Limit?">
+                <field name="msg" readonly="1"/>
                 <p>
                     Do you wish to confirm this Sale Order but hold partner's Credit Limit?
                 </p>
                 <footer>
                     <button name="confirm_creditlimitonhold" type="object" string="Confirm" class="btn-primary"/>
-                    <button name="cancel_creditlimitonhold" type="object" string="Cancel" class="btn-default" special="cancel"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
                 </footer>
             </form>
         </field>
     </record>
-
-
 </odoo>
