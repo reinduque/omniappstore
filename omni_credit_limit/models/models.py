@@ -18,15 +18,6 @@ class creditLimit(models.Model):
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-    state = fields.Selection([
-        ('draft', 'Quotation'),
-        ('sent', 'Quotation Sent'),
-        ('credit_limit', 'Credit Limit on Hold'),
-        ('sale', 'Sales Order'),
-        ('done', 'Locked'),
-        ('cancel', 'Cancelled'),
-        ], string='Status', readonly=True, copy=False, index=True, tracking=4, default='draft')
-
     def action_confirm2(self):
         self.ensure_one()
         partner = self.partner_id
